@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./motohub logo.png" type="image/x-icon">
+  <title>Motohub - Bike Accessories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-black">
+  <!-- HEADER SECTION WITH YELLOW BACKGROUND -->
+  <div class="bg-yellow-400">
+    <!-- TOP BAR: LOGO + SEARCH + ICONS -->
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="RE img/motohub logo.png" class="h-16" alt="Motohub logo"><span><b><i>MOTOHUB</i></b></span>
+      </div>
+
+
+      <!-- Transparent Search Bar -->
+<div class="flex bg-transparent border border-yellow-500 rounded-full overflow-hidden w-full max-w-2xl mx-6 shadow-sm">
+  <select class="px-3 py-2 text-sm bg-yellow-500 border-r border-yellow-500 outline-none text-black">
+    <option>All</option>
+    <option>Helmets</option>
+    <option>Lights</option>
+  </select>
+  <input type="text" placeholder="Search for products" class="w-full px-4 py-2 outline-none bg-transparent text-black placeholder-gray-600" />
+  <img src="RE img/voice icon.png" alt="Voice Button" class="h-6 w-6 object-contain cursor-pointer mr-2 mt-2" />
+</div>
+
+
+      <!-- Icons -->
+      <div class="flex items-center gap-4">
+        <a href="signup.html" class="text-gray-800 hover:text-red-600">
+          <i class="fa-solid fa-user text-2xl"></i>
+        </a>
+      </div>
+
+      <a href="cart.html"><img src="/RE img/cart-removebg-preview.png" class="w-8 h-8" /></a>
+
+      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-semibold text-sm">
+        ⭐ KNOW YOUR OFFER
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR WITH DROPDOWNS -->
+  <nav class="shadow-sm bg-yellow-400 border-t border-black">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center space-x-6 font-bold text-sm">
+      <!-- Repeated dropdowns -->
+      <div class="relative group">
+        <button class="hover:underline">SHOP BY BIKE ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Royal Enfield.html"><li>Royal Enfield</li></a>
+            <a href="YAMAHA.html"><li>Yamaha</li></a>
+            <li>Honda</li>
+            <li>Bajaj</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">SUPER BIKES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Kawasaki Ninja</li>
+            <li>BMW S1000RR</li>
+            <li>Hayabusa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">MOTORCYCLE ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Bike Protection.html"><li>Bike Protection</li></a>
+            <a href="Lighting.html"><li>Lighting</li></a>
+            <li>Crash Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">RIDING GEARS ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Riding Jackets</li>
+            <li>Gloves</li>
+            <li>Knee Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">LUGGAGE & TOURING ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li><a href="bag.html" class="hover:text-red-500">Bags & Backpacks</a></li>
+<li><a href="lugg.html" class="hover:text-red-500">Luggage Accessories</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">HELMETS AND ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="helmet.html"><li>Full Face</li></a>
+            <a href="half_helmet.html"><li>HALF FACE HELMET</li></a>
+            <a href="off_road.html"><li>OFFROAD HELMET</li></a>
+            <li>Visors</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="hover:underline">COMBOS</button>
+      <a href="EVENTS.html"><button class="hover:underline">EVENTS</button></a>
+    </div>
+  </nav>
+  </div>
+
+  <body class="bg-gray-100">
+
+  <div class="space-y-12">
+      <!-- ✅ MT 15 Heading -->
+      <section class="px-6 py-4 bg-white mb-16">
+        <h1 class="text-4xl font-bold text-gray-800">Offroad Helmets</h1>
+      </section>
+    
+    
+      <!-- ✅ Product Grid Section -->
+      <section class="p-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+
+
+          
+          <!-- 🔁 Product Card Start -->
+          <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition relative">
+            <!-- Product Image with Hover Effect -->
+            <div class="w-full h-60 relative overflow-hidden group rounded-lg">
+              <!-- Discount Badge -->
+              <span class="absolute top-3 left-3 z-10 bg-blue-600 text-xs font-bold px-2 py-1 rounded">
+                Free Shipping
+              </span>
+    
+              <!-- Add to Cart Yellow Floating Button (Link) -->
+              <a href="cart.html" 
+           class="absolute bottom-3 right-3 z-10 bg-yellow-400 p-3 rounded-md hover:bg-yellow-500 transition"
+           title="Add to Wishlist">
+          <img src="/RE img/shopping-bag-removebg-preview.png" alt="Custom Icon" class="h-5 w-5 object-contain">
+        </a>
+    
+              <!-- Default Image -->
+              <img src="RE img/download (8)offroad.png"
+                   alt="Main Image"
+                   class="w-full h-full object-contain group-hover:hidden transition duration-300 bg-white" />
+    
+              <!-- Hover Image -->
+              <img src="https://bandidospitstop.com/cdn/shop/files/2_a7502b0b-8e64-45d3-b69a-1a9725b384e1.jpg?v=1744224742&width=575"
+                  alt="Hover Image"
+                  class="w-full h-full object-cover hidden group-hover:block transition duration-300 bg-white" />
+            </div>
+    
+            <!-- Product Info -->
+            <div class="mt-4">
+              <p class="text-sm text-gray-400">AXOR</p>
+              <h2 class="text-md font-semibold mb-1">Axor X-Cross SC Black Red</h2>
+              <div class="flex items-center space-x-2">
+                <p class="text-lg font-bold text-black">₹5,984.00</p>
+                <!-- <p class="line-through text-gray-400">₹5,680.00</p> -->
+              </div>
+              <p class="text-sm text-red-500 mt-1 flex items-center">
+          <span class="w-2 h-2 bg-red-500 rounded-full inline-block mr-1"></span>
+          Very low stock
+        </p>
+    
+        <!-- Buy Now Button -->
+        <a href="#"
+           class="block mt-4 w-full bg-black text-white py-2 rounded-md text-center hover:bg-gray-800 transition font-medium">
+          Buy Now
+        </a>
+            </div>
+          </div>
+          <!-- 🔁 Product Card End -->
+    
+          <!-- 🔁 Product Card Start -->
+          <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition relative">
+            <!-- Product Image with Hover Effect -->
+            <div class="w-full h-60 relative overflow-hidden group rounded-lg">
+              <!-- Discount Badge -->
+               <span class="absolute top-3 left-3 z-10 bg-blue-600 text-xs font-bold px-2 py-1 rounded">
+                Free Shipping
+              </span>
+    
+              <!-- Add to Cart Yellow Floating Button (Link) -->
+              <a href="cart.html" 
+           class="absolute bottom-3 right-3 z-10 bg-yellow-400 p-3 rounded-md hover:bg-yellow-500 transition"
+           title="Add to Wishlist">
+          <img src="/RE img/shopping-bag-removebg-preview.png" alt="Custom Icon" class="h-5 w-5 object-contain">
+        </a>
+    
+              <!-- Default Image -->
+              <img src="RE img/download offroad.png"
+                   alt="Main Image"
+                   class="w-full h-full object-contain group-hover:hidden transition duration-300 bg-white" />
+    
+              <!-- Hover Image -->
+              <img src="https://bandidospitstop.com/cdn/shop/files/HEL15630.jpg?v=1744225191&width=575"
+                  alt="Hover Image"
+                  class="w-full h-full object-cover hidden group-hover:block transition duration-300 bg-white" />
+            </div>
+    
+            <!-- Product Info -->
+            <div class="mt-4">
+              <p class="text-sm text-gray-400">AXOR</p>
+              <h2 class="text-md font-semibold mb-1">Axor X Cross D V SC Black Orange</h2>
+              <div class="flex items-center space-x-2">
+                <p class="text-lg font-bold text-black">₹7,406.00</p>
+                <!-- <p class="line-through text-gray-400">₹4,460.00</p> -->
+              </div><br>
+              <!-- <p class="text-sm text-red-500 mt-1 flex items-center">
+          <span class="w-2 h-2 bg-red-500 rounded-full inline-block mr-1"></span>
+          Very low stock
+        </p>
+     -->
+        <!-- Buy Now Button -->
+        <a href="#"
+           class="block mt-4 w-full bg-black text-white py-2 rounded-md text-center hover:bg-gray-800 transition font-medium">
+          Buy Now
+        </a>
+            </div>
+          </div>
+          <!-- 🔁 Product Card End -->
+          <!-- 🔁 Product Card Start -->
+          <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition relative">
+            <!-- Product Image with Hover Effect -->
+            <div class="w-full h-60 relative overflow-hidden group rounded-lg">
+              <!-- Discount Badge -->
+              <div class="">
+                <div><span class="absolute top-3 left-3 z-10 bg-blue-600 text-xs font-bold px-2 py-1 rounded">
+                Free Shipping
+              </span>
+            </div>
+              <!-- <div>
+                
+              <span class="absolute top-3 left-3 z-10 bg-blue-600 text-xs font-bold px-2 py-1 rounded">
+                Sold Out
+              </span>
+              </div> -->
+
+              </div>
+    
+              <!-- Add to Cart Yellow Floating Button (Link) -->
+              <a href="cart.html" 
+           class="absolute bottom-3 right-3 z-10 bg-yellow-400 p-3 rounded-md hover:bg-yellow-500 transition"
+           title="Add to Wishlist">
+          <img src="/RE img/shopping-bag-removebg-preview.png" alt="Custom Icon" class="h-5 w-5 object-contain">
+        </a>
+    
+              <!-- Default Image -->
+              <img src="RE img/download (8)offroad.png"
+                   alt="Main Image"
+                   class="w-full h-full object-contain group-hover:hidden transition duration-300 bg-white" />
+    
+              <!-- Hover Image -->
+              <img src="https://bandidospitstop.com/cdn/shop/files/5_32384384-01ae-46e7-a9a9-555b447c81ee.webp?v=1744225437&width=575"
+                   alt="Hover Image"
+                   class="w-full h-full object-cover hidden group-hover:block transition duration-300 bg-white" />
+            </div>
+    
+            <!-- Product Info -->
+            <div class="mt-4">
+              <p class="text-sm text-gray-400">AXOR</p>
+              <h2 class="text-md font-semibold mb-1">AXOR X-Cross Single Color Black Red</h2>
+              <div class="flex items-center space-x-2">
+                <p class="text-lg font-bold text-black">₹5,984.00</p>
+                <!-- <p class="line-through text-gray-400">₹1,390.00</p> -->
+              </div>
+              <p class="text-sm text-red-500 mt-1 flex items-center">
+          <span class="w-2 h-2 bg-red-500 rounded-full inline-block mr-1"></span>
+          Very low stock
+        </p>
+    
+        <!-- Buy Now Button -->
+        <a href="#"
+           class="block mt-4 w-full bg-black text-white py-2 rounded-md text-center hover:bg-gray-800 transition font-medium">
+          Buy Now
+        </a>
+            </div>
+          </div>
+          <!-- 🔁 Product Card End -->
+    
+
+
+
+</div>
+      </section>
+<!-- Footer -->
+<footer class="bg-yellow-400 text-black py-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-bold mb-2">Connect us</h3>
+      <p class="font-semibold">Everbravo private limited</p>
+      <p class="mt-2 text-sm">
+        Ever Bravo Private Limited,<br>
+        13/412/c, Near Kokkulangara Bhagavathy Temple,<br>
+        M.G Kavu P.O, 680581 Kozhikunnu, Kerala, India
+      </p>
+      <p class="mt-2 text-sm">Email: <a href="mailto:info@bandidospitstop.com"
+          class="underline">info@everbravo.com</a></p>
+      <p class="text-sm">Contact: <a href="tel:+918891020202" class="underline">+918891020202</a></p>
+      <p class="font-semibold mt-2">For online orders: <a href="tel:+918589020202" class="underline">+918589020202</a>
+      </p>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 mt-4 rounded">MESSAGE US</button>
+      <div class="flex space-x-4 mt-4 text-2xl">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-tumblr"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-bold mb-2">About Us</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-bold mb-2">Delivery & returns</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Returns policy & Refunds policy</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="font-bold mb-2">Newsletter</h3>
+      <p class="text-sm mb-4">Sign up for exclusive offers, original stories, events and more.</p>
+      <div class="flex">
+        <input type="email" placeholder="Your email" class="flex-grow p-2 rounded-l border border-gray-300">
+        <button class="bg-black text-white px-4 rounded-r">&#8594;</button>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <style>
+      #gallery{
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .contact{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+      }
+        h1{
+            margin-left: 2%;
+            padding-top: 5%;
+        }
+        #about{
+          margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- navbar  -->
+<body class="font-sans text-black">
+  <!-- HEADER SECTION WITH YELLOW BACKGROUND -->
+  <div class="bg-yellow-400">
+    <!-- TOP BAR: LOGO + SEARCH + ICONS -->
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="RE img/motohub logo.png" class="h-16" alt="Motohub logo"><span><b><i>MOTOHUB</i></b></span>
+      </div>
+
+
+      <!-- Transparent Search Bar -->
+<div class="flex bg-transparent border border-yellow-500 rounded-full overflow-hidden w-full max-w-2xl mx-6 shadow-sm">
+  <select class="px-3 py-2 text-sm bg-yellow-500 border-r border-yellow-500 outline-none text-black">
+    <option>All</option>
+    <option>Helmets</option>
+    <option>Lights</option>
+  </select>
+  <input type="text" placeholder="Search for products" class="w-full px-4 py-2 outline-none bg-transparent text-black placeholder-gray-600" />
+  <img src="RE img/voice icon.png" alt="Voice Button" class="h-6 w-6 object-contain cursor-pointer mr-2 mt-2" />
+</div>
+
+
+      <!-- Icons -->
+      <div class="flex items-center gap-4">
+        <a href="signup.html" class="text-gray-800 hover:text-red-600">
+          <i class="fa-solid fa-user text-2xl"></i>
+        </a>
+      </div>
+
+      <a href="cart.html"><img src="/RE img/cart-removebg-preview.png" class="w-8 h-8" /></a>
+
+      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-semibold text-sm">
+        ⭐ KNOW YOUR OFFER
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR WITH DROPDOWNS -->
+  <nav class="shadow-sm bg-yellow-400 border-t border-black">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center space-x-6 font-bold text-sm">
+      <!-- Repeated dropdowns -->
+      <div class="relative group">
+        <button class="hover:underline">SHOP BY BIKE ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Royal Enfield.html"><li>Royal Enfield</li></a>
+            <a href="YAMAHA.html"><li>Yamaha</li></a>
+            <li>Honda</li>
+            <li>Bajaj</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">SUPER BIKES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Kawasaki Ninja</li>
+            <li>BMW S1000RR</li>
+            <li>Hayabusa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">MOTORCYCLE ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Bike Protection.html"><li>Bike Protection</li></a>
+            <a href="Lighting.html"><li>Lighting</li></a>
+            <li>Crash Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">RIDING GEARS ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Riding Jackets</li>
+            <li>Gloves</li>
+            <li>Knee Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">LUGGAGE & TOURING ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="bag.html"><li>Bags & Backpacks</li></a>
+            <a href="lugg.html"><li>Luggage Accessories</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">HELMETS AND ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="helmet.html"><li>Full Face</li></a>
+            <a href="half_helmet.html"><li>HALF FACE HELMET</li></a>
+            <a href="off_road.html"><li>OFFROAD HELMET</li></a>
+            <li>Visors</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="hover:underline">COMBOS</button>
+       <a href="EVENTS.html"><button class="hover:underline" onclick="window.location.href='index.html'">EVENTS</button></a>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <video 
+  autoplay 
+  muted 
+  loop 
+  playsinline 
+  class="w-full h-auto  object-cover"
+>
+  <source src="./Screen Recording 2025-08-06 102336.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<section id="gallery">
+    <h1 class="text-4xl font-bold">Explore - 2025
+</h1><br>
+
+<!-- ------------------------------------------------- -->
+
+<div class="flex w-full h-[600px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[70%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/1_eff57fe4-9efc-4265-8a6c-a22ed2d313b3.webp?v=1747135204&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <!-- Right side: two stacked smaller images -->
+  <div class="w-[30%] h-full flex flex-col gap-5">
+    <img src="https://bandidospitstop.com/cdn/shop/files/2_ac7a92a3-a5f5-4186-a00b-1332e7243ade.webp?v=1747135226&width=1225" alt="" class="w-full h-80 object-cover rounded-lg">
+    <img src="https://bandidospitstop.com/cdn/shop/files/5_de49d7c3-7cd3-4219-b690-a43c79ca3e9a.webp?v=1747135281&width=1225" alt="" class="w-full h-64 object-cover rounded-lg">
+  </div>
+</div>
+<br>
+<!-- ------------------------------------------------------------- -->
+
+<div class="flex w-full h-[300px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[70%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/3_a6bc89a3-8338-4c00-93cb-3ceddae95955.webp?v=1747135252&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <div class="w-[30%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/4_8afaa30e-e818-4bd8-bb2c-85a3d828317e.webp?v=1747135303&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+  
+  
+</div>
+<br>
+
+<!-- ----------------------------------------------------------------------------- -->
+<div class="grid grid-cols-3 gap-4">
+  <!-- Top left image -->
+  <div>
+    <img src="https://bandidospitstop.com/cdn/shop/files/7_664aafe7-4c22-4bba-914f-38ddceb0f156.webp?v=1745475394&width=1000" 
+         alt="" 
+         class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <!-- Top right image -->
+  <div>
+    <img src="https://bandidospitstop.com/cdn/shop/files/11_8800ea5c-042d-4210-9565-f0a2ce059024.webp?v=1747135395&width=1000" 
+         alt="" 
+         class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <!-- Tall image on the right spanning 3 rows -->
+  <div class="row-span-3">
+    <img src="https://bandidospitstop.com/cdn/shop/files/6_9da7e6e4-c240-449f-bca6-939e5a46655a.webp?v=1747135324&width=1225" 
+         alt="" 
+         class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <!-- Wide image spanning 2 columns and 2 rows -->
+  <div class="col-span-2 row-span-2  h-[300px]">
+    <img src="https://bandidospitstop.com/cdn/shop/files/9_f60bbe38-efb3-45a5-80da-118d38d9d98b.webp?v=1747135346&width=1225" 
+         alt="" 
+         class="w-full h-full object-cover rounded-lg">
+  </div>
+</div>
+<br>
+
+<!-- ---------------------------------------------------------- -->
+
+
+
+<div class="flex w-full h-[300px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[70%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/7_da460fb0-c636-4e70-a380-0d8dea572872.webp?v=1747135373&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <div class="w-[30%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/13_53007806-7146-465d-b248-eba79d8d13d2.webp?v=1747135413&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+  
+  
+</div>
+<br>
+
+
+<!-- ---------------------------------------------------------- -->
+
+  <div class="flex">
+  <div class="h-[600px] w-full overflow-hidden">
+    <img src="https://bandidospitstop.com/cdn/shop/files/21.webp?v=1747136983&width=1500" alt="" class="h-full w-full object-cover rounded-lg">
+  </div>
+</div>
+<br>
+
+<div class="flex">
+  <div class="h-[600px] w-full overflow-hidden">
+    <img src="https://bandidospitstop.com/cdn/shop/files/8_083e3cdb-e6dd-4112-af68-608ea2a0123b.webp?v=1747135493&width=1500" alt="" class="h-full w-full object-cover rounded-lg">
+  </div>
+</div>
+
+<br>
+
+<!-- ------------------------------------------------------------  -->
+
+
+
+
+
+<div class="flex w-full h-[400px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[70%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/18_2fac4b17-f11c-4adc-8afa-18e16fa6ddb0.webp?v=1747137043&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <div class="w-[30%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/17_192faf3b-511f-4ef6-a087-5cb251b12290.webp?v=1747137071&width=1225" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+  
+  
+</div>
+<br>
+
+<!-- ------------------------------------------------- -->
+
+
+<div class="flex w-full h-[600px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[60%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/20_f3e30767-8ecc-4c12-a8c1-cb7af99236fa.webp?v=1747137105&width=1500" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <!-- Right side: two stacked smaller images -->
+  <div class="w-[40%] h-full flex flex-col gap-5">
+    <img src="https://bandidospitstop.com/cdn/shop/files/16_6bd8bcf8-f9c3-4ece-b30b-530d3c68e192.webp?v=1747137106&width=1225" alt="" class="w-full h-80 object-cover rounded-lg">
+    <img src="https://bandidospitstop.com/cdn/shop/files/19_6c78d25e-41bf-494e-b2b8-9e7c2f5d825f.webp?v=1747137106&width=1225" alt="" class="w-full h-64 object-cover rounded-lg">
+  </div>
+</div>
+<br>
+
+
+<!-- ------------------------------------------------- -->
+
+
+
+
+<div class="flex w-full h-[500px] gap-4">
+  <!-- Left side: one large image -->
+  <div class="w-[80%] h-full">
+    <img src="https://bandidospitstop.com/cdn/shop/files/15_24a5fe4b-c9a9-4910-a4b4-271b50726aa4.webp?v=1747137227&width=1500" alt="" class="w-full h-full object-cover rounded-lg">
+  </div>
+ </div>
+
+
+<br><br>
+</section>
+
+
+ <section  class="bg-yellow-300  contact">
+
+  <div class="grid grid-cols-4 gap-9">
+  <div>
+    <h6 class="font-bold">Connect us</h6><br>
+    <h6 class="font-bold">Everbravo private limited</h6><br>
+    <p>Ever Bravo Private Limited,13/412/c, Near
+Kokkulangara Bhagavathy Temple, M.G Kavu P.O,
+680581 Kozhikunnu, Kerala, India</p><br>
+<p>Email: info@everbravo.com</p><br>
+<p>Contact: +918891020202</p><br>
+<h6 class="font-bold">For online orders: +918589020202</h6><br>
+
+<a href="https://api.whatsapp.com/send/?phone=918589020202&text=hi&type=phone_number&app_absent=0" 
+   target="_blank" 
+   class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">
+  Message Us
+</a>
+
+
+
+<!-- 
+
+<button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">
+  MESSAGE US
+</button> -->
+<br><br>
+
+         <div class="flex  gap-5  text-2xl">
+            <div class="transition-transform duration-500 ease-in-out transform hover:scale-105"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="transition-transform duration-500 ease-in-out transform hover:scale-105"><i class="fa-brands fa-twitter"></i></div>
+            <div class="transition-transform duration-500 ease-in-out transform hover:scale-105"><i class="fa-brands fa-facebook"></i></div>
+            <div class="transition-transform duration-500 ease-in-out transform hover:scale-105"><i class="fa-brands fa-instagram"></i></div>
+            <div class="transition-transform duration-500 ease-in-out transform hover:scale-105"><i class="fa-brands fa-youtube"></i></div>
+            <!-- <div class="icon"><i class="fa-brands fa-whatsapp"></i></div> -->
+            <!-- <div class="icon"><i class="fa-brands fa-github"></i></div> -->
+        </div>  <br>
+
+  </div>
+  
+  <div id="about">
+    <h6 class="font-bold ">About Bandidos</h6><br>
+    <p class="cursor-pointer">Photos</p><br>
+    <p class="cursor-pointer">Video</p><br>
+<p class="cursor-pointer">Site Map</p><br>
+<a href="contact.html" class="cursor-pointer">Contact Us</a>
+<br>
+
+<!-- <p class="cursor-pointer">Contact Us</p><br> -->
+<br>
+<p class="cursor-pointer">Brands</p><br>
+
+
+  </div>
+
+
+   <div class="cursor-pointer">
+    <h6 class="font-bold">Delivery & returns</h6><br>
+    <p>Privacy Policy</p><br>
+    <p>Terms & Conditions</p><br>
+<p>Returns policy & Refunds policy</p><br>
+<p>Cancellation Policy</p><br>
+<p>Shipping Policy</p><br>
+
+
+  </div>
+
+
+
+<div>
+  <h6 class="font-bold">Newsletter</h6>
+  <p>Sign up for exclusive offers, original stories, events and more.</p><br>
+  <div class="flex items-center border border-gray-300  bg-white px-4 py-2 w-full max-w-md">
+  <input 
+    type="email" 
+    placeholder="Your email" 
+    class="flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-500"
+  />
+  <button class="text-black-500 hover:text-black-700">
+    <i class="fas fa-arrow-right"></i> <!-- Font Awesome icon -->
+  </button>
+</div>
+
+</div>
+
+
+</div>
+<hr>
+<br>
+<p>© 2025 Bandidos pitstop. Powered by Shopify</p>
+ </section>
+
+
+
+</body>
+</html>
+
+

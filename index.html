@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./motohub logo.png" type="image/x-icon">
+  <title>Motohub - Bike Accessories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-black">
+  <!-- HEADER SECTION WITH YELLOW BACKGROUND -->
+  <div class="bg-yellow-400">
+    <!-- TOP BAR: LOGO + SEARCH + ICONS -->
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="RE img/motohub logo.png" class="h-16" alt="Motohub logo"><span><b><i>MOTOHUB</i></b></span>
+      </div>
+
+
+      <!-- Transparent Search Bar -->
+<div class="flex bg-transparent border border-yellow-500 rounded-full overflow-hidden w-full max-w-2xl mx-6 shadow-sm">
+  <select class="px-3 py-2 text-sm bg-yellow-500 border-r border-yellow-500 outline-none text-black">
+    <option>All</option>
+    <option>Helmets</option>
+    <option>Lights</option>
+  </select>
+  <input type="text" placeholder="Search for products" class="w-full px-4 py-2 outline-none bg-transparent text-black placeholder-gray-600" />
+  <img src="RE img/voice icon.png" alt="Voice Button" class="h-6 w-6 object-contain cursor-pointer mr-2 mt-2" />
+</div>
+
+
+      <!-- Icons -->
+      <div class="flex items-center gap-4">
+        <a href="signup.html" class="text-gray-800 hover:text-red-600">
+          <i class="fa-solid fa-user text-2xl"></i>
+        </a>
+      </div>
+
+      <a href="cart.html"><img src="/RE img/cart-removebg-preview.png" class="w-8 h-8" /></a>
+
+      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-semibold text-sm">
+        ⭐ KNOW YOUR OFFER
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR WITH DROPDOWNS -->
+  <nav class="shadow-sm bg-yellow-400 border-t border-black">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center space-x-6 font-bold text-sm">
+      <!-- Repeated dropdowns -->
+      <div class="relative group">
+        <button class="hover:underline">SHOP BY BIKE ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Royal Enfield.html"><li>Royal Enfield</li></a>
+            <a href="YAMAHA.html"><li>Yamaha</li></a>
+            <li>Honda</li>
+            <li>Bajaj</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">SUPER BIKES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Kawasaki Ninja</li>
+            <li>BMW S1000RR</li>
+            <li>Hayabusa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">MOTORCYCLE ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="Bike Protection.html"><li>Bike Protection</li></a>
+            <a href="Lighting.html"><li>Lighting</li></a>
+            <li>Crash Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">RIDING GEARS ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li>Riding Jackets</li>
+            <li>Gloves</li>
+            <li>Knee Guards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">LUGGAGE & TOURING ▾</button>
+        <div class="absolute left-0 w-64 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <li><a href="bag.html" class="hover:text-red-500">Bags & Backpacks</a></li>
+<li><a href="lugg.html" class="hover:text-red-500">Luggage Accessories</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="hover:underline">HELMETS AND ACCESSORIES ▾</button>
+        <div class="absolute left-0 w-72 bg-yellow-300 hidden group-hover:block p-4 shadow-lg z-10">
+          <ul class="space-y-2">
+            <a href="helmet.html"><li>Full Face</li></a>
+            <a href="half_helmet.html"><li>HALF FACE HELMET</li></a>
+            <a href="off_road.html"><li>OFFROAD HELMET</li></a>
+            <li>Visors</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="hover:underline">COMBOS</button>
+      <a href="EVENTS.html"><button class="hover:underline">EVENTS</button></a>
+    </div>
+  </nav>
+  </div>
+
+  <!-- FULL WIDTH IMAGE BANNER WITH CENTERED MOTOHUB TEXT -->
+  <section class="relative w-full">
+    <img src="RE img/main img.jpg"
+      class="w-full h-[500px] object-cover" alt="Banner" />
+    <div class="absolute inset-0 flex items-center justify-center">
+      <h1 class="text-yellow-500 text-5xl md:text-7xl font-bold  px-6 py-4 rounded">Motohub</h1>
+    </div>
+  </section>
+</body>
+
+
+<!-- BIKE CARDS SECTION -->
+<section class="max-w-7xl bg-white h-max mx-auto py-12 px-4">
+  <h2 class="text-3xl font-bold mb-8 text-center">Explore by Bike</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div
+      class="bg-white rounded shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer">
+      <img
+        src="https://bandidospitstop.com/cdn/shop/files/ADVENTURE_390_X_df549150-f664-418e-a8d0-c9eefd0b1fdd.webp?v=1747481386&width=1000"
+        alt="Royal Enfield" class="w-full h-48 object-cover hover:opacity-80" />
+      <!-- <div class="p-4 text-center font-semibold text-lg">ADVENTURE 390 2025 Model</div> -->
+    </div>
+
+    <div
+      class="bg-white rounded shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer">
+      <img
+        src="https://bandidospitstop.com/cdn/shop/files/speed_400_72c51414-6254-4f5e-9a04-e271f4669a4b.webp?v=1747479756&width=1000"
+        alt="KTM" class="w-full h-48 object-cover hover:opacity-80" />
+      <!-- <div class="p-4 text-center font-semibold text-lg">KTM</div> -->
+    </div>
+
+    <div
+      class="bg-white rounded shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer">
+      <img src="https://bandidospitstop.com/cdn/shop/files/Kawasaki.webp?v=1747480669&width=1000" alt="Yamaha"
+        class="w-full h-48 object-cover hover:opacity-80" />
+      <!-- <div class="p-4 text-center font-semibold text-lg">Yamaha</div> -->
+    </div>
+  </div>
+</section>
+
+<section class="py-12 px-4 relative">
+  <h2 class="text-2xl font-bold mb-6">SHOP BY BIKE</h2>
+
+  <!-- Left Arrow -->
+  <a href="#bike1"
+    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+
+  <!-- Right Arrow -->
+  <a href="#bike10"
+    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+
+  <!-- Scrollable container -->
+  <div class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-6 px-10 no-scrollbar">
+    <!-- Card 1 -->
+    <div id="bike1"
+      class="snap-start min-w-[180px] bg-yellow hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://www.carbike360.com/_next/image?url=https%3A%2F%2Fd2uqhpl0gyo7mc.cloudfront.net%2Fsmall_Kawasaki_Z_H2_carbike360_1_0e37087137.jpg&w=3840&q=75"
+        alt="Kawasaki" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">KAWASAKI</span>
+    </div>
+
+    <!-- Card 2 -->
+    <div id="bike2"
+      class="snap-start min-w-[180px] bg-yellow hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img src="https://m.media-amazon.com/images/I/51d-D7Pvj6L.jpg" alt="KTM" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">KTM</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div id="bike3"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://english.cdn.zeenews.com/sites/default/files/2023/06/15/1220727-hero-xtreme-160r-4v-images-up.jpg"
+        alt="Hero" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">HERO</span>
+    </div>
+
+    <!-- Card 4 -->
+    <div id="bike4"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <a href="Royal Enfield.html">
+        <img
+          src="https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/continental-gt/new/colours/studio-shots/apex-grey/new/apex_grey_0000.png"
+          alt="Royal Enfield" class="h-40 object-contain mb-4" />
+        <span class="font-semibold text-center">ROYAL ENFIELD</span>
+      </a>
+    </div>
+
+    <!-- Card 5 -->
+    <div id="bike5"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img src="https://bikesindiahonda.com/wp-content/themes/rvtheme/bikes/main-10333.png?1750509364" alt="Honda"
+        class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">HONDA</span>
+    </div>
+
+    <!-- Card 6 -->
+    <div id="bike6"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://imgd.aeplcdn.com/310x174/n/cw/ec/1/versions/suzuki-gixxer-ride-connect-obd-2b1740545220923.jpg?q=80"
+        alt="Suzuki" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">SUZUKI</span>
+    </div>
+
+    <!-- Card 7 -->
+    <div id="bike7"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/1/versions/tvs-raider-125-drum1741766352464.jpg?q=80" alt="TVS"
+        class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">TVS</span>
+    </div>
+
+    <!-- Card 8 -->
+    <div id="bike8"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://img.autocarindia.com/model/uploads/modelimages/BMW-Bikes-R-1250-GS-010920211425.png?w=350&h=251&q=92&c=1"
+        alt="BMW" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">BMW</span>
+    </div>
+
+    <!-- Card 9 -->
+    <div id="bike9"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://cdn.globalbajaj.com/-/media/Demo/Images/CT-100/CT-100/ct-topbike.png?h=997&iar=0&w=1640&rev=594147a580f74ac9967e57dc91284fc6&hash=53944D9FC8F79432C25CBF256E974F56"
+        alt="Bajaj" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">BAJAJ</span>
+    </div>
+
+    <!-- Card 10 -->
+    <div id="bike10"
+      class="snap-start min-w-[180px] bg-white hover:bg-gray-200 transition rounded-2xl shadow-md p-4 flex flex-col items-center">
+      <img
+        src="https://gobikes-prod-public.s3.ap-south-1.amazonaws.com/uploads/admin/bike/f4b3e928-cb68-41db-9d68-6731e86d8437.webp"
+        alt="Ather" class="h-40 object-contain mb-4" />
+      <span class="font-semibold text-center">ATHER</span>
+    </div>
+  </div>
+</section>
+<!-- Accessories Section -->
+<section class="bg-yellow-400 py-12 px-4">
+  <h2 class="text-3xl font-bold text-center mb-10 text-black">Accessories</h2>
+
+  <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+
+    <!-- RYNOX -->
+    <div class="relative w-full md:w-1/3">
+      <img
+        src="https://bandidospitstop.com/cdn/shop/files/WhatsApp_Image_2025-06-02_at_10.48.58_AM.jpg?v=1748843076&width=1000"
+        alt="RYNOX" class="w-full h-auto rounded-xl">
+      <span class="absolute top-4 left-4 bg-yellow-300 text-black font-bold px-4 py-1 rounded">RYNOX</span>
+    </div>
+
+    <!-- AXOR -->
+    <div class="relative w-full md:w-1/3">
+      <img
+        src="https://bandidospitstop.com/cdn/shop/files/WhatsApp_Image_2025-06-02_at_10.49.14_AM.jpg?v=1748843102&width=1000"
+        alt="AXOR" class="w-full h-auto rounded-xl">
+      <span class="absolute top-4 left-4 bg-yellow-300 text-black font-bold px-4 py-1 rounded">AXOR</span>
+    </div>
+
+    <!-- TOP BOX -->
+    <div class="relative w-full md:w-1/3">
+      <img
+        src="https://bandidospitstop.com/cdn/shop/files/WhatsApp_Image_2025-06-02_at_10.49.19_AM.jpg?v=1748843120&width=1000"
+        alt="TOP BOX" class="w-full h-auto rounded-xl">
+      <span class="absolute top-4 left-4 bg-yellow-300 text-black font-bold px-4 py-1 rounded">TOP BOX</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Full Width YouTube Video -->
+<section class="w-full">
+  <div class="w-full aspect-video">
+    <iframe class="w-full h-full"
+      src="https://www.youtube.com/embed/ERbuxjhORlA?autoplay=1&mute=1&loop=1&playlist=ERbuxjhORlA"
+      title="Chris Birch takes on MUD BATH MOUNTAIN on new bikes!" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Riding Gears Section -->
+<section class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold mb-8 border-b-4 border-yellow-500 inline-block uppercase">Riding Gears</h2>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Large Item (Riding Jackets) -->
+      <div class="bg-yellow-200 rounded-lg p-4 flex justify-center items-center">
+        <img
+          src="https://bandidospitstop.com/cdn/shop/files/jacket_copy_copy_b759487c-0e55-4df8-a57f-bf4238cbc73b.webp?v=1695353986&width=1000"
+          alt="Riding Jacket" class="max-h-72 object-contain bg-transparent">
+      </div>
+
+      <!-- Right Side - Small Items -->
+      <div class="md:col-span-2 grid grid-cols-2 gap-4">
+
+        <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center">
+          <img src="https://bandidospitstop.com/cdn/shop/files/55.webp?v=1692272308&width=1000" alt="Riding Gloves"
+            class="h-32 object-contain bg-transparent">
+          <p class="mt-2 font-bold uppercase">Riding Gloves</p>
+        </div>
+
+        <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center">
+          <img
+            src="https://bandidospitstop.com/cdn/shop/files/pants_copy_756ac404-993a-4aee-a8ca-2032b42bfc34.webp?v=1692271755&width=1000"
+            alt="Riding Pants" class="h-32 object-contain bg-transparent">
+          <p class="mt-2 font-bold uppercase">Riding Pants</p>
+        </div>
+
+        <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center">
+          <img
+            src="https://bandidospitstop.com/cdn/shop/files/222_7975e731-5718-43f9-b749-ceac5964e05e.webp?v=1692271509&width=1000"
+            alt="Riding Boot" class="h-32 object-contain bg-transparent">
+          <p class="mt-2 font-bold uppercase">Riding Boot</p>
+        </div>
+
+        <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center">
+          <img
+            src="https://bandidospitstop.com/cdn/shop/files/111_039c4b3b-3024-4e12-9691-f31c7e372910.webp?v=1692271432&width=1000"
+            alt="Knee Guard" class="h-32 object-contain bg-transparent">
+          <p class="mt-2 font-bold uppercase">Knee Guard</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Featured Blog Section -->
+<section class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 border-b-2 border-yellow-500 inline-block">FEATURED BLOG</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Blog Card 1 -->
+      <div class="flex flex-col">
+        <img src="https://bandidospitstop.com/cdn/shop/articles/x.webp?v=1752579474&width=1500" alt="Hero Xpulse 210"
+          class="w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-bold">HERO XPULSE 210 MUST HAVE ACCESSORIES FOR THE ULTIMATE ADVENTURE</h3>
+        <p class="mt-2 text-gray-600">The all-new Hero Xpulse 210 is here – a bold evolution in India’s adventure
+          motorcycling segment...</p>
+        <span class="mt-2 text-gray-400 text-sm">June 10, 2025</span>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="flex flex-col">
+        <img
+          src="https://bandidospitstop.com/cdn/shop/articles/himalayan_450_bb684dcd-f19e-490c-9a2e-04e4b37cc478.webp?v=1751605000&width=750"
+          alt="Himalayan 450" class="w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-bold">HEY HIMALAYAN 450 RIDERS!</h3>
+        <p class="mt-2 text-gray-600">The Royal Enfield Himalayan 450 is designed to conquer any terrain with its 452cc
+          liquid-cooled engine...</p>
+        <span class="mt-2 text-gray-400 text-sm">April 23, 2025</span>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="flex flex-col">
+        <img src="https://www.extremetoursindia.com/wp-content/uploads/2020/03/Himalayan-Motorcycle-Tour.jpg"
+          alt="Adventure Blog" class="w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-bold">TOP 5 ADVENTURE ROUTES IN INDIA</h3>
+        <p class="mt-2 text-gray-600">Explore India’s most thrilling adventure biking routes, from the Himalayas to the
+          Western Ghats...</p>
+        <span class="mt-2 text-gray-400 text-sm">March 5, 2025</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Customer Reviews Section -->
+<section class="bg-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Review 1 -->
+      <div class="bg-yellow-300 p-6 shadow-lg rounded-lg">
+        <p class="text-gray-700 mb-4">
+          "Amazing experience! The bike accessories are top-notch, and delivery was super fast."
+        </p>
+        <div class="flex items-center">
+          <!-- <img src="customer1.jpg" alt="Customer 1" class="w-12 h-12 rounded-full mr-4"> -->
+          <div>
+            <h3 class="font-semibold">Rahul Menon</h3>
+            <p class="text-sm text-gray-500">Kerala, India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-yellow-300 p-6 shadow-lg rounded-lg">
+        <p class="text-gray-700 mb-4">
+          "I love the variety of products available. Customer service is also very friendly!"
+        </p>
+        <div class="flex items-center">
+          <!-- <img src="customer2.jpg" alt="Customer 2" class="w-12 h-12 rounded-full mr-4"> -->
+          <div>
+            <h3 class="font-semibold">Sneha R</h3>
+            <p class="text-sm text-gray-500">Bangalore, India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-yellow-300 p-6 shadow-lg rounded-lg">
+        <p class="text-gray-700 mb-4">
+          "Quality products and reasonable prices. Definitely recommend this store."
+        </p>
+        <div class="flex items-center">
+          <!-- <img src="customer3.jpg" alt="Customer 3" class="w-12 h-12 rounded-full mr-4"> -->
+          <div>
+            <h3 class="font-semibold">Arjun Nair</h3>
+            <p class="text-sm text-gray-500">Chennai, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-yellow-400 text-black py-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-bold mb-2">Connect us</h3>
+      <p class="font-semibold">Everbravo private limited</p>
+      <p class="mt-2 text-sm">
+        Ever Bravo Private Limited,<br>
+        13/412/c, Near Kokkulangara Bhagavathy Temple,<br>
+        M.G Kavu P.O, 680581 Kozhikunnu, Kerala, India
+      </p>
+      <p class="mt-2 text-sm">Email: <a href="mailto:info@bandidospitstop.com"
+          class="underline">info@everbravo.com</a></p>
+      <p class="text-sm">Contact: <a href="tel:+918891020202" class="underline">+918891020202</a></p>
+      <p class="font-semibold mt-2">For online orders: <a href="tel:+918589020202" class="underline">+918589020202</a>
+      </p>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 mt-4 rounded">MESSAGE US</button>
+      <div class="flex space-x-4 mt-4 text-2xl">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-tumblr"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-bold mb-2">About Us</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-bold mb-2">Delivery & returns</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Returns policy & Refunds policy</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="font-bold mb-2">Newsletter</h3>
+      <p class="text-sm mb-4">Sign up for exclusive offers, original stories, events and more.</p>
+      <div class="flex">
+        <input type="email" placeholder="Your email" class="flex-grow p-2 rounded-l border border-gray-300">
+        <button class="bg-black text-white px-4 rounded-r">&#8594;</button>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
